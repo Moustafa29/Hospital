@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('hospitalgg.jpg'); 
+            background-size: cover;
+            background-position: center;
+        }
+        .navbar {
+            background-color: #4585a0;
+            padding: 15px 0;
+            text-align: center;
+            position: relative;
+        }
+        .logout-btn {
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: #ff0000;
+            color: #fff;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .logout-btn:hover{
+            background-color:#c40000;
+        }
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .navbar ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        .navbar ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+        .navbar ul li a:hover {
+            color:#abcedd;
+        }
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #e4f1f3;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            opacity: 90%;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+        }
+        .card-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap   : wrap;
+        }
+        .card {
+            width: 250px;
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            text-align: center;
+            cursor: pointer;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card h3 {
+            margin-top: 0;
+            color: #333;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .card p {
+            margin-bottom: 0;
+            color: #666;
+            font-size: 16px;
+        }
+        .card img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            margin: 0 auto 15px;
+            display: block;
+        }
+        /* About Us Section */
+        .about-section {
+            background-color: #e4f1f3;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            margin-top: 40px;
+        }
+        .about-section h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .about-section p {
+            font-size: 18px;
+            color: #666;
+            line-height: 1.6;
+            text-align: justify;
+        }
+        .social-icons {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .icon-link {
+            display: inline-block;
+            margin-right: 15px;
+            color: #333;
+            font-size: 24px;
+            transition: color 0.3s ease;
+        }
+        .icon-link:hover {
+            color: #4585a0;
+        }
+        .navbar-logo {
+            max-width: 50px;
+            position: absolute;
+            left: 40px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="home.html"><img src="icon.png" alt="Logo" class="navbar-logo"></a>
+        <a href="login.html">
+        <button class="logout-btn">Logout</button>
+        </a>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="appointment.html">Appointments</a></li>
+            <li><a href="#">Patients</a></li>
+            <li><a href="#">Doctors</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h1>Welcome to Moustafa Hospital</h1>
+        <div class="card-container">
+            <a href="appointment.html" style="text-decoration: none;">
+                <div class="card">
+                    <img src="appointment.png" alt="Appointments">
+                    <h3>Appointments</h3>
+                    <p>Manage and schedule appointments efficiently.</p>
+                </div>
+            </a>
+            <div class="card">
+                <img src="patient.png" alt="Patients">
+                <h3>Patients</h3>
+                <p>Access and update patient records securely.</p>
+            </div>
+            <div class="card">
+                <img src="doctor.png" alt="Doctors">
+                <h3>Doctors</h3>
+                <p>Manage doctor profiles and schedules seamlessly.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="about-section">
+        <h2>About Us</h2>
+        <p>At Gaber Hospital, we are dedicated to providing exceptional healthcare services to our patients.
+             With a team of experienced professionals and state of the art facilities, 
+             we strive to deliver compassionate care and promote wellness in our community.
+              Our commitment to excellence drives us to continuously improve and innovate,
+               ensuring that every patient receives the highest standard of medical treatment and support.</p>
+        <div class="social-icons">
+            <a href="#" class="icon-link"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="icon-link"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="icon-link"><i class="fas fa-envelope"></i></a>
+        </div>
+    </div>
+    
+</body>
+</html>
